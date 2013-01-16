@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>jkupferman</title>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <style>
+      html {
+        background: url(/images/frisco.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-size: 1em;
+        color: #fff;
+        float: right;
+        text-align: right;
+        padding: 20px 50px;
+      }
+
+      h1 {
+        font-size: 5em;
+        letter-spacing: -2px;
+        line-height: 0.8em;
+        margin: 0;
+        width: 405px;
+      }
+
+      ul {
+        list-style-type: none;
+        font-size: 2.3em;
+      }
+      
+      ul a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      ul a:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37697723-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <h1>
+      Jonathan
+      Kupferman
+    </h1>
+    <ul class="links">
+      <li><a alt="Jonathan Kupferman Blog" target="_blank" href="http://regexprn.com">Blog</a></li>
+      <li><a alt="Jonathan Kupfermans Twitter" target="_blank" href="http://twitter.com/jkupferman">Twitter</a></li>
+      <li><a alt="Jonathan Kupfermans Facebook" target="_blank" href="http://www.facebook.com/jkupferman">Facebook</a></li>
+      <li><a alt="Jonathan Kupfermans GitHub" target="_blank" href="https://github.com/jkupferman">GitHub</a></li>
+    </ul>
+    <ul class="projects">
+      <li><a alt="Listen to the best mixes and dj sets on soundcloud" target="_blank" href="http://mixtrss.com">Mixtrss</a></li>
+      <li><a alt="The simplest meme creator ever. Just put everything in the URL" target="_blank" href="http://memeifier.com">Memeifier</a></li>
+      <li><a alt="Find out if a website is hosted on the cloud" target="_blank" href="http://isitcloudy.com">Is it Cloudy?</a></li>
+    </ul>
+    <3
+
+    <script type="text/javascript">
+    window.onload = function () {
+        var links = document.getElementsByTagName('a');
+        for (var i=0; i < links.length; i++) {
+            links[i].onclick = function () {
+                var domain = new RegExp(document.domain, 'i');
+                if(!domain.test(this.getAttribute('href'))) {
+                    _gaq.push(['_trackEvent', 'Outbound Link', this.getAttribute('href')]);
+                }
+            };
+        }
+    };
+   </script>
+  </body>
+</html>

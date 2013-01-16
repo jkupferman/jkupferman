@@ -3,5 +3,5 @@ require "rubygems"
 require "sinatra"
 
 get "/" do
-  redirect 'http://www.regexprn.com/'
+  erb :index
 end
