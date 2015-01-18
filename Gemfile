@@ -5,5 +5,4 @@ gem 'rake'
 
 gem 'sinatra'
 gem 'shotgun'
-gem 'heroku'
 gem 'puma'
