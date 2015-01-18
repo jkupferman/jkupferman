@@ -104,7 +104,7 @@
             links[i].onclick = function () {
                 var domain = new RegExp(document.domain, 'i');
                 if(!domain.test(this.getAttribute('href'))) {
-                    _gaq.push(['_trackEvent', 'Outbound Link', this.getAttribute('href')]);
+                    _gaq.push(['_trackEvent', 'Outbound Link', 'Click', this.getAttribute('href')]);
                 }
             };
         }
