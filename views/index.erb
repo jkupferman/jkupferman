@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta content='initial-scale=1' name='viewport'>
     <title>Jonathan Kupferman's Website</title>
     <meta charset="UTF-8" content="text/html" http-equiv="Content-Type" />
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -17,7 +18,7 @@
       }
 
       body {
-        font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
         font-size: 1em;
         color: #fff;
         float: right;
@@ -31,13 +32,18 @@
         line-height: 0.8em;
         margin: 0;
         width: 405px;
+        max-width: 100%;
       }
 
       ul {
         list-style-type: none;
         font-size: 2.3em;
       }
-      
+
+      ul li {
+        padding-bottom: 5px;
+      }
+
       ul a {
         color: #fff;
         text-decoration: none;
@@ -46,6 +52,18 @@
       ul a:hover {
         text-decoration: underline;
       }
+
+      @media(max-width: 568px) {
+        h1 {
+          font-size: 3em;
+          word-wrap: break-word;
+        }
+
+        ul {
+          font-size: 2em;
+        }
+      }
+
     </style>
 
     <script type="text/javascript">
