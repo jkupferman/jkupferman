@@ -6,3 +6,4 @@ gem 'rake'
 gem 'sinatra'
 gem 'shotgun'
 gem 'puma'
+gem "rack", ">= 2.0.6"
